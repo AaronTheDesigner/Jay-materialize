@@ -1,308 +1,685 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">    
-
-                
-    
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jay Requard</title>
-  <style>
-    
-    body {
-      background-color: #b71c1c;
-    }
 
-    #poster {
-      background-image: url("/assets/Jay1.png");
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    
-    .icons {
-      font-size: 3rem;
-    }    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <title>Books For The March</title>
+    <style>
 
-    
+      header {
+        background: url(assets/BM.jpg);
+        background-size: cover;
+        background-position: 30% 0%;
+        min-height: 700px;
+        background-attachment: fixed;
+      }
 
-  </style>
+      #About {
+        background: url(assets/jay.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 700px;
+        background-attachment: fixed;
+      }
+
+      #push, #update {
+        padding-top: 30vw;
+        padding-bottom: 1vw
+      }
+
+      #Events {
+        background-color: grey;
+        padding-bottom: 0;
+      }
+
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+
+      #Podcast {
+        background: url(assets/jay.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 700px;
+        background-attachment: fixed;
+        padding-top: 1vw;
+      }
+
+      @media screen and (max-width: 670px) {
+        header{
+          min-height: 650px;
+        }
+        
+
+      }
+
+      #podcast {
+        width: 560px;
+        height: 100vh;
+        background-color: #fff;
+        margin: 0 auto;
+      }
+    
+    </style>
 </head>
 <body>
-  <!--Nav -->
-<div class="navbar-fixed" id="home">
-  <nav class="nav-wrapper red darken-4">
-    <div class="container">
-      <a href="#" class="brand-logo">Jay Requard</a>
-      <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#podcast">Podcast</a></li>
-        <li><a href="#catalogue">Catalogue</a></li>
+  <!--Navbar-->
+  <header>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper grey darken-4">
+        <div class="container">
+          <a href="#" class="brand-logo">Jay Requard</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <h1 id="update" class="container center-align"><a href="#" class="white-text">Podcast Episode 1</a></h1>
+  </header>
+
+  <!--About-->
+  <div class="container-fluid white-text" id="About">
+    <div id="push">
+    <h1>Jay Requard</h1>
+    <h2>Author, Podcaster</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+    </div>
+  </div>
+
+  <!--Works-->
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#Featured" class="active">Featured</a></li>
+        <li class="tab col s3"><a href="#Anthologies">Anthologies</a></li>
+        <li class="tab col s3"><a href="#Sword">Sword and Sorcery</a></li>
+        <li class="tab col s3"><a href="#Upcoming">Upcoming</a></li>
       </ul>
     </div>
-  </nav>
-</div>
-  
-  <ul class="sidenav" id="mobile-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#podcast">Podcast</a></li>
-      <li><a href="#catalogue">Catalogue</a></li>
-  </ul>
 
-  <!--Event Slider-->
-  <div class="slider yellow lighten-4">
-    <ul class="slides">
-      <li>
-        <img src="/assets/jay.png" alt="Jay"> 
-        <div class="caption center-align">
-          <h1>Books of The March</h1>
-          <h5 class="light grey-text text-lighten-3">Description</h5>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/dragon.jpg" alt="">      
-        <div class="caption">
-          <h3 class="black-text">Event</h3>
-          <h5 class="class black-text text-lighten-3">Location</h5>
-          <h5 class="class black-text text-lighten-3">Date</h5>
-          <h5 class="class black-text text-lighten-3">Link</h5>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/balticon-51.jpg" alt="">      
-        <div class="caption">
-          <h3>Event</h3>
-          <h5 class="class grey-text text-lighten-3">Location</h5>
-          <h5 class="class grey-text text-lighten-3">Date</h5>
-          <h5 class="class grey-text text-lighten-3">Link</h5>
-        </div>
-      </li>
-      <li>
-          <img src="/assets/NY_comicon.png" alt="">      
-          <div class="caption">
-            <h3>Event</h3>
-            <h5 class="class grey-text text-lighten-3">Location</h5>
-            <h5 class="class grey-text text-lighten-3">Date</h5>
-            <h5 class="class grey-text text-lighten-3">Link</h5>
+    <!--Featured-->
+    <div id="Featured" class="col s12">
+        <section class="container section hide-on-med-and-down" id="Books">
+
+            <!--Featured 1-->
+            <div class="row">
+              <div class="col s12 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="assets/titles/tod.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                    <p>"review quote"</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Amazon</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l6 offset-l1">
+                  <h2 class="indigo-text text-darken-4">Title 1</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+              </div>
+            </div>
+
+            <!--Featured 2-->
+            <div class="row">
+                <div class="col s12 l4 push-l7">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="assets/titles/WP.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                      <p>"review quote"</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Amazon</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6 pull-l4 right-align">
+                    <h2 class="indigo-text text-darken-4">Title 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                </div>
+              </div>
+
+              <!--Featured 3-->
+              <div class="row">
+                  <div class="col s12 l4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/titles/D-Flowers.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <p>"review quote"</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">Amazon</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 l6 offset-l1">
+                      <h2 class="indigo-text text-darken-4">Title 3</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                  </div>
+                </div>   
+            </section>
+
+            <!--Mobile Featured -->
+            <div class="container-fluid hide-on-large-only">
+
+                <!-- MFeatured 1-->
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/titles/tod.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Amazon</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+
+                  <!-- MFeatured 2-->
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/titles/WP.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Amazon</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+
+                    <!-- MFeatured 3-->
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/titles/D-Flowers.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">Amazon</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                      </div>
+            </div>
+    
+    </div>
+
+    <!--Anthologies-->
+    <div id="Anthologies" class="col s12">
+        <section class="container section hide-on-med-and-down" id="Books">
+
+            <!--Featured 1-->
+            <div class="row">
+              <div class="col s12 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="assets/titles/G-C.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                    <p>"review quote"</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Amazon</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l6 offset-l1">
+                  <h2 class="indigo-text text-darken-4">Title 1</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+              </div>
+            </div>
+
+            <!--Featured 2-->
+            <div class="row">
+                <div class="col s12 l4 push-l7">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="assets/titles/TC.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                      <p>"review quote"</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Amazon</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6 pull-l4 right-align">
+                    <h2 class="indigo-text text-darken-4">Title 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                </div>
+              </div>
+
+              <!--Featured 3-->
+              <div class="row">
+                  <div class="col s12 l4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/titles/GS1.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <p>"review quote"</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">Amazon</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 l6 offset-l1">
+                      <h2 class="indigo-text text-darken-4">Title 3</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                  </div>
+                </div>   
+            </section>
+
+            <!--Mobile Featured -->
+            <div class="container-fluid hide-on-large-only">
+
+                <!-- MFeatured 1-->
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/titles/G-C.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Amazon</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+
+                  <!-- MFeatured 2-->
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/titles/TC.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Amazon</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+
+                    <!-- MFeatured 3-->
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/titles/GS1.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">Amazon</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                      </div>
+            </div>
+    
+    </div>    
+
+    <!--Sword and Sorcery-->
+    <div id="Sword" class="col s12">
+        <section class="container section hide-on-med-and-down" id="Books">
+
+            <!--Featured 1-->
+            <div class="row">
+              <div class="col s12 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="assets/titles/tod.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                    <p>"review quote"</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Amazon</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l6 offset-l1">
+                  <h2 class="indigo-text text-darken-4">Title 1</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+              </div>
+            </div>
+
+            <!--Featured 2-->
+            <div class="row">
+                <div class="col s12 l4 push-l7">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="assets/titles/WP.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                      <p>"review quote"</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Amazon</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6 pull-l4 right-align">
+                    <h2 class="indigo-text text-darken-4">Title 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                </div>
+              </div>
+
+              <!--Featured 3-->
+              <div class="row">
+                  <div class="col s12 l4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/titles/D-Flowers.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <p>"review quote"</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">Amazon</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 l6 offset-l1">
+                      <h2 class="indigo-text text-darken-4">Title 3</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                  </div>
+                </div>   
+            </section>
+
+            <!--Mobile Featured -->
+            <div class="container-fluid hide-on-large-only">
+
+                <!-- MFeatured 1-->
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/titles/tod.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Amazon</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+
+                  <!-- MFeatured 2-->
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/titles/WP.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Amazon</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+
+                    <!-- MFeatured 3-->
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/titles/D-Flowers.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">Amazon</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                      </div>
+            </div>
+    
+    </div>
+
+    <!--Upcoming-->
+    <div id="Upcoming" class="col s12">
+        <section class="container section hide-on-med-and-down" id="Books">
+
+            <!--Featured 1-->
+            <div class="row">
+              <div class="col s12 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="assets/titles/G-C.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                    <p>"review quote"</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Amazon</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l6 offset-l1">
+                  <h2 class="indigo-text text-darken-4">Title 1</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+              </div>
+            </div>
+
+            <!--Featured 2-->
+            <div class="row">
+                <div class="col s12 l4 push-l7">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="assets/titles/TC.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                      <p>"review quote"</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Amazon</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6 pull-l4 right-align">
+                    <h2 class="indigo-text text-darken-4">Title 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                </div>
+              </div>
+
+              <!--Featured 3-->
+              <div class="row">
+                  <div class="col s12 l4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/titles/GS1.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                        <p>"review quote"</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">Amazon</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 l6 offset-l1">
+                      <h2 class="indigo-text text-darken-4">Title 3</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium accusantium numquam quis. Quo iure ipsa at aliquid, explicabo repellat, fugiat voluptates aperiam distinctio ea laboriosam velit hic mollitia eaque alias.</p>
+                  </div>
+                </div>   
+            </section>
+
+            <!--Mobile Featured -->
+            <div class="container-fluid hide-on-large-only">
+
+                <!-- MFeatured 1-->
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="assets/titles/G-C.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Amazon</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+
+                  <!-- MFeatured 2-->
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/titles/TC.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Amazon</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+
+                    <!-- MFeatured 3-->
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/titles/GS1.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Theif of Destiny<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">Amazon</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Theif of Destiny<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                      </div>
+            </div>
+    
+    </div>
+
+  </div>
+
+  <!--Events-->
+  <div class="slider" id="Events">
+      <ul class="slides">
+        <li>
+          <img src="" alt="">
+          <div class="caption center-align">
+            <h3>Event 1</h3>
+            <h5 class="light grey-text text-lighten-3">here's the small text</h5>
           </div>
         </li>
-    </ul>
-  </div>
-
-  <!--Hero Parallax -->
- 
-  <div class="parallax-container hide-on-small-only hide">
-    <div class="parallax"><img src="/assets/jay.png">
-    </div>
-  </div>
-  
-  <div class="parallax-container hide hide-on-med-and-up">
-    <div class="parallax"><img src="/assets/headsmall.jpg" alt="">
-    </div>
-  </div>
-  
-  <!--About Jay -->
-  
-  <div class="section yellow lighten-4" id="about">
-    <div class="row" id="about">
-      <div class="col l1 hide-on-med-and-down"></div>
-      <div class="col l4 m4 s12 center align"><h5>Jay Requard</h5>  pic</div>
-      <div class="col l6 m8 s12 center align"><h5>Fantasy Redefined</h5>humble brag</div>
-      <div class="col l1 hide-on-med-and-down"></div>
-    </div>
-  </div>
-  
-  <!--Podcast -->
-  <div class="container-fluid red darken-4" id="podcast">
-    <div class="row">
-      <h1 class="center span white-text">Podcast</h1>  
-    </div>    
-      <div class="col l1"></div>
-      <div class="col l11">
-        <div class="video-container">
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/bmD4HIsPKoI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>      
-          </div>
-      </div>
-    
-  </div>
-  <div id="catalogue"></div>
-  
-  <!--Catalogue -->
-  <div class="container center red darken-4">
-    <div class="row">
-      <h1>Featured Books</h1>
-      <h2>Description</h2>
-    </div>
-    <div class="row">
-      <div class="col l4 m12 s12 center">
-        <!--large card-->
-        <div class="card z-depth-5 brown lighten-4 hide-on-med-and-down">
-          <div class="card-image">
-            <img class="activator" src="/assets/titles/tod.jpg" alt="">
-          </div>
-          <div class="card-content">
-            <p>"review blurb here..."</p>
-          </div>
-          <div class="card-action"><a href="#">Amazon</a></div>
-        </div>
-        <!--mobile card-->
-        <div class="card hide-on-large-only">
-          <div class="card-image wave-effect waves-block waves-light">
-            <img src="/assets/titles/ToD.jpg" alt="" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Theif of Destiny <i class="material-icons right">more_vert</i></span>
-            <p><a href="#">Amazon</a></p>
-          </div>
-          <div class="card-reveal"><span class="card-title grey-text text-darken-4">Theif of Destiny <i class="material-icons">close</i></span>
-          <p>Lurking in the shadows of Tolivius’ oppressive metropolis, the savannah’s greatest thief has spent years pilfering one rich Gypian lord after another, fueling a war that will set his native Juutans free. Yet in those same alleys and on the dusty plains he calls home something else has arisen—something with designs far darker than simply releasing the enslaved.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l8 m12 s12 grey-text text-lighten-2 right-align hide-on-med-and-down">
-        <h3>Theif of Destiny<i class="material-icons icons">book</i></h3>
-        <p class="flow-text">Lurking in the shadows of Tolivius’ oppressive metropolis, the savannah’s greatest thief has spent years pilfering one rich Gypian lord after another, fueling a war that will set his native Juutans free. Yet in those same alleys and on the dusty plains he calls home something else has arisen—something with designs far darker than simply releasing the enslaved.</p>
-      </div>       
-    </div>
-    <div class="row">
-      <div class="col l8 m12 s12 left-align grey-text text-lighten-2 hide-on-med-and-down">
-        <h3><i class="material-icons icons">book</i>War Pigs</h3>
-        <p class="flow-text">Among the tribes of the Wagani war is life, and for Lut, war is his way out of the poverty that he was born into. A reaver, a warrior, and the chosen of the enigmatic goddess the Azure Queen, he has dedicated his existence to furthering her glory by the bite of his axe. Bloodthirsty, powerful, and without mercy, he marches upon the world to spread the name of his beloved deity.</p>
-      </div>
-      <div class="col l4 m12 s12">
-        <!--large card-->
-        <div class="card z-depth-5 brown lighten-4 hide-on-med-and-down">
-          <div class="card-image"><img src="/assets/titles/WP.jpg" alt="">
-          </div>
-          <div class="card-content">
-            <p>"review blurb here..."</p>
-          </div>
-          <div class="card-action"><a href="#">Amazon</a></div>
-        </div>
-        <!--mobile card-->
-        <div class="card hide-on-large-only">
-            <div class="card-image wave-effect waves-block waves-light">
-              <img src="/assets/titles/WP.jpg" alt="" class="activator">
+        <li>
+          <img src="" alt="">
+            <div class="caption center-align">
+              <h3>Event 2</h3>
+              <h5 class="light grey-text text-lighten-3">here's the small text</h5>
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">War Pigs <i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Amazon</a></p>
-            </div>
-            <div class="card-reveal"><span class="card-title grey-text text-darken-4">War Pigs <i class="material-icons">close</i></span>
-            <p>Among the tribes of the Wagani war is life, and for Lut, war is his way out of the poverty that he was born into. A reaver, a warrior, and the chosen of the enigmatic goddess the Azure Queen, he has dedicated his existence to furthering her glory by the bite of his axe. Bloodthirsty, powerful, and without mercy, he marches upon the world to spread the name of his beloved deity.</p>
-            </div>
-          </div>  
-        </div>
-    </div>
-    <div class="row">
-        <div class="col l4 m12 s12 center">
-          <!--large card-->
-          <div class="card z-depth-5 brown lighten-4 hide-on-med-and-down">
-            <div class="card-image">
-              <img class="activator" src="/assets/titles/R-B.jpg" alt="">
-            </div>
-            <div class="card-content">
-              <p>"review blurb here..."</p>
-            </div>
-            <div class="card-action"><a href="#">Amazon</a></div>
-          </div>
-          <!--mobile card-->
-          <div class="card hide-on-large-only">
-            <div class="card-image wave-effect waves-block waves-light">
-              <img src="/assets/titles/R-B.jpg" alt="" class="activator">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Reefer Snakes! <i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Amazon</a></p>
-            </div>
-            <div class="card-reveal"><span class="card-title">Reefer Snakes! <i class="material-icons">close</i></span>
-            <p>The Black Company meets Cheech and Chong in this gut-splitting novelization of a Bollywood grindhouse flick you’ll never see on the big screen. Jishnu and the Grinders Sellsword Company face seductive goddesses, deadly nagas, and endless fields of cannabis sativa. Frame by frame, Jay Requard has painstakingly reconstructed REEFER SNAKES! to its former glory. A blood soaked Swords & Sandals adventure brimming with nonstop thrills, this novelization is available for the first time ever in its worldwide release from Grind Pulp Press.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col l8 m12 s12 hide-on-med-and-down grey-text text-lighten-2 right-align">       
-          <h3>Reefer Snakes!<i class="material-icons icons">book</i></h3>
-          <p class="flow-text">The Black Company meets Cheech and Chong in this gut-splitting novelization of a Bollywood grindhouse flick you’ll never see on the big screen. Jishnu and the Grinders Sellsword Company face seductive goddesses, deadly nagas, and endless fields of cannabis sativa. Frame by frame, Jay Requard has painstakingly reconstructed REEFER SNAKES! to its former glory. A blood soaked Swords & Sandals adventure brimming with nonstop thrills, this novelization is available for the first time ever in its worldwide release from Grind Pulp Press.</p>
-        </div>       
-      </div>
-    <br>
-    <br>
-    <a href="#catelogue1" class="waves-effect waves-light brown darken-4 btn modal-trigger">View Jay's Full Catelogue</a>
-    <br>
-    <br>
-  </div>
-
-  <!--Events -->
-  <div class="carousel carousel-slider hide center white-text">
-    <div class="carousel-item" href="#one!">
-      <h2>Dragon Con 2018</h2>
-      <p class="">paragraph</p>
-      <img src="/assets/dragon.jpg" alt="">
-    </div>
-    <div class="carousel-item" href="#two!">
-      <h2>Balticon 51?</h2>
-      <p class="">paragraph</p>
-      <img src="/assets/balticon-51.jpg" alt="">
-    </div>
-    <div class="carousel-item" href="#three!">
-      <h2>New York ComiCon</h2>
-      <p class="">paragraph</p>
-      <img src="/assets/NY_comicon.png" alt="">
-    </div>
-  </div>
-
-
-
-  <!--Blog -->
-  <div class="container-fluid hide">
-    Blog  container-fluid
-    </div>
-  
-  <!--Contact -->
-  
-  <div class="fixed-action-btn">
-      <a class="btn-floating btn-large red">
-        <i class="large material-icons">send</i>
-      </a>
-      <ul>
-        <li><a class="btn-floating red"><i class="material-icons">email</i></a></li>
-        <li><a class="btn-floating yellow darken-1"><i class="material-icons">phone</i></a></li>
+          </li>
+          <li>
+            <img src="" alt="">
+              <div class="caption center-align">
+                <h3>Event 3</h3>
+                <h5 class="light grey-text text-lighten-3">here's the small text</h5>
+              </div>
+          </li>
       </ul>
-    </div>
-    
+  </div>
+  
 
-  <!--Catelogue Modal-->
-  <div class="modal" id="catelogue1">
-    <div class="modal-content center brown">
-      <h4>Catelogue</h4>
-      <p>content</p>
-      <div class="modal-footer brown"><a href="#!" class="modal-close waves-effect btn-flat">Back</a></div>
-    </div>
+
+  
+  <!--Podcast/Youtube API-->
+  <div class="container-fluid white-text center-align" id="Podcast">
+
+    <h1>Podcast Series</h1>
+    <h2>Episode 1 Title</h2>
+    <h3>Description</h3>
+    <section id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bmD4HIsPKoI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+
   </div>
 
   <!--Footer-->
-  <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-          © 2014 Copyright Text
-          <a href="#!" class="grey-text text-lighten-4 right">More Links</a>
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>More Info</h5>
+          <p>
+            Info
+          </p>
+          <p>
+            Info
+          </p>
+          <p>
+            Info
+          </p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2018 Jay Requard</div>
     </div>
   </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+<!--JQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-
 <script src="app.js"></script>
-
 </body>
 </html>

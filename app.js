@@ -34,3 +34,7 @@ $('.fixed-action-btn').floatingActionButton({
 $(document).ready(function(){
   $('.tooltipped').tooltip();
 });
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
